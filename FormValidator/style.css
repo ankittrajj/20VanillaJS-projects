@@ -1,0 +1,104 @@
+:root{
+    --success-color:green;
+    --error-color:rgba(252, 7, 7, 0.842);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:62.5%;
+    font-weight: 500;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    text-align: center;
+    align-items: center;
+    /* background-image: linear-gradient(270deg,rgba(120, 120, 247, 0.788),rgba(95, 93, 93, 0.788)); */
+    background-image: linear-gradient(245deg,rgba(92, 92, 245, 0.795),rgba(247, 74, 74, 0.726)),
+    url("/FormValidator/piza-3010062_640.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+}
+.form{
+    font-size: 20px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 1rem;
+    margin-right: 5rem;
+}
+ h2{
+    font-size: 3rem;
+    text-decoration: underline black 2px;
+    padding-bottom: 2rem;
+    text-shadow: 2px 2px 2px gray;
+}
+.form-control{
+    text-align: left;
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+}
+.form-control label{
+    display: block;
+    padding: .2rem;
+}
+.form-control input{
+    padding: 5px 10px;
+    box-shadow: .1px .1px .2px .2px rgba(82, 82, 83, 0.815);
+    border-radius: 40px;
+    /* outline: none; */
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    /* position: relative; */
+}
+.form-control input:focus{
+    outline: none;
+}
+.form-control.success input{
+    border-color: var(--success-color);
+}
+.form-control.error input{
+    border-color: var(--error-color);
+}
+.form-control small{
+    color: var(--error-color);
+    font-size: 15px;
+    text-shadow: 1px 1px 2px black;
+    position: absolute;
+    /* bottom: 1rem; */
+    left: 2rem;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+button{
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 5px 20px;
+    margin-top: 20px ;
+    border-radius: 20px;
+    /* box-shadow: .2px .1px .1px  gray; */
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    text-decoration: underline 1px;
+    background-color: black;
+    color: #fff;
+}
